@@ -1,5 +1,6 @@
 """Median calculator."""
 """ENTER YOUR SOLUTION HERE!"""
+import statistics
 
 while True:
     try:
@@ -11,8 +12,5 @@ while True:
         break
 print(numbers)
 
-if len(numbers) % 2 != 0:
-    print(numbers[len(numbers)//2])
-else:
-    middle = numbers[len(numbers) // 2] + numbers[(len(numbers) // 2) - 1]
-    print(middle/2)
+median = statistics.median(map(float, numbers))
+print(f"Median: {median}")
