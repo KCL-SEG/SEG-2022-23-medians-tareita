@@ -10,3 +10,9 @@ while True:
     else:
         break
 print(numbers)
+
+if len(numbers) % 2 != 0:
+    print(numbers[len(numbers)//2])
+else:
+    middle = numbers[len(numbers) // 2] + numbers[(len(numbers) // 2) - 1]
+    print(middle/2)
